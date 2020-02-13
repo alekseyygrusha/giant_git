@@ -1,0 +1,85 @@
+@media screen and (max-width: 1200px) {
+  section {
+    padding: 0 40px;
+  }
+  .backgroung_image {
+    display: none;
+  }
+  .opportunities .advantages {
+    max-width: 1000px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .opportunities .advantages .card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .opportunities .advantages .card .body_card {
+    padding-left: 0px;
+  }
+  .opportunities .advantages .card h3 {
+    padding-top: 10px;
+  }
+  .stranded .background_image {
+    display: none;
+    z-index: -1;
+    opacity: 0.3;
+  }
+  .package .cards_wrap {
+    margin: 0 auto;
+    max-width: 840px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .giant_app_now .download_cards {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .customers .slider_wrap {
+    max-width: 500px;
+  }
+  .customers .slider_wrap .slider {
+    grid-template-columns: 1fr;
+  }
+  .customers .slider_wrap .slider .item {
+    margin: 0 auto;
+  }
+  .customers .slider_wrap .slider > div:nth-child(odd) {
+    display: none;
+  }
+  .package .cards_wrap .card {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (max-width: 860px) {
+  .intro_text {
+    margin: 60px auto 40px auto;
+  }
+  .stranded .content {
+    margin: 60px 20px 60px auto;
+  }
+  .header_menu {
+    display: none;
+  }
+}
+@media screen and (max-width: 640px) {
+  section {
+    padding: 0 15px;
+  }
+  header {
+    padding: 0 20px;
+  }
+  header section .content {
+    margin-top: 60px;
+  }
+  header section .content h1 {
+    font-size: 42px;
+  }
+  .opportunities .advantages {
+    grid-template-columns: 1fr;
+  }
+  .package .cards_wrap {
+    max-width: 300px;
+    grid-template-columns: 1fr;
+  }
+}

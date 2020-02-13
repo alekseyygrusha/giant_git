@@ -1,0 +1,103 @@
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Dosis";
+}
+
+h1 {
+    font-size: 54px;
+}
+
+h2 {
+    font-size: 36px;
+    color: #222222;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 14px;
+}
+
+p {
+    font-size: 14px;
+    color: #777777;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+small {
+    font-size: 14px;
+}
+
+.button {
+    color: #222222;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+header .content h1 {
+    color: #ffffff;
+    font-family: "Dosis";
+    font-size: 54px;
+    font-weight: 600;
+    line-height: 60px;
+}
+
+header .content p {
+    color: white;
+}
+
+.opportunities .advantages .card .body_card h3 {
+    color: #222222;
+    font-family: Dosis;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.price_box {
+    color: #333333;
+}
+
+.price_box h4 .price {
+    font-size: 50px;
+}
+
+.package .cards_wrap .card .button_wrap {
+    font-weight: 600;
+}
+
+.customers .author_name {
+    font-weight: 500;
+    color: #222222;
+}
+
+.customers .author_name span {
+    color: #777777;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.giant_app_now h2 {
+    color: white;
+}
+
+.giant_app_now .card p span {
+    color: #222222;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 24px;
+}
