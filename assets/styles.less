@@ -4,8 +4,6 @@
     box-sizing: border-box;
 }
 
-
-
 input {
     display: none;
 }
@@ -167,7 +165,6 @@ header {
         .subtitle {
             padding: 23px 0 24px 0;
             z-index: 1111;
-
         }
 
 
@@ -184,7 +181,10 @@ header {
                 background-color: #ffffff;
             }
 
-
+            .button:hover {
+                border: 2px solid white;
+                transition: .2s;
+            }
 
         }
 
@@ -328,10 +328,10 @@ header {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 30px;
 
-        .card {
+        .card_price {
             background-color: #f7fafc;
             margin-bottom: 120px;
-
+            
             h4 {
                 padding: 15px 0 18px 0;
             }
@@ -340,11 +340,11 @@ header {
             .price_box {
                 width: 100%;
                 height: 120px;
-                background-image: url(assets/img/bg_white.png);
+                background-image: url(img/bg_white.png);
                 background-size: cover;
                 background-position: bottom;
                 margin-bottom: 40px;
-
+                position: relative;
                 h4 {
                     position: relative;
                     max-width: 109px;
@@ -391,15 +391,30 @@ header {
 
 
         }
-
-        .card:hover {
+        .gradient_background {
+            background-image: url(img/bg_gradient.png);
+            position: absolute;
+            background-size: cover;
+            background-position: bottom;
+            display: none;
+            width: 100%;
+            height: 100%;
+        }
+        .card_price:hover {
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-
+            
             .price_box {
-                background-image: url(assets/img/bg_gradient.png);
                 transition: .3s;
                 color: white;
+                z-index: 9999;
             }
+
+            .gradient_background {
+                display: block;
+                transition: .3s;
+            }
+
+            
 
             .buy {
                 background: linear-gradient(to right, #fd712c 0%, #f21780 100%);
@@ -455,15 +470,14 @@ header {
         align-items: center;
 
         .slider {
-            grid-template-columns: 1fr 1fr 1fr;
-            gap: 30px;
+            display: block;
             width: 100%;
             max-width: 1140px;
-
+            margin: 0 auto;
             .item {
-                max-width: 360px;
+                // max-width: 360px;
                 box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-
+                margin: 0px 10px;
                 p,
                 div {
                     padding: 40px 40px 0 40px;
@@ -593,3 +607,43 @@ footer {
         text-align: center;
     }
 }
+.slick-arrow {
+    font-size: 10px;
+   
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    color: #777777;
+    border: 1px solid #eeeeee;
+}
+
+.left {
+    margin-right: 10px;
+}
+
+.right {
+    margin-left: 10px;
+}
+
+.button_arrow:hover {
+    cursor: pointer;
+    transition: .3s;
+    color: white;
+    background: linear-gradient(to right, #fd712c 0%, #f21780 100%);
+}
+
+.slick-prev,
+.slick-next {
+    background-color: red;
+    font-size: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    color: #777777;
+    border: 1px solid #eeeeee;
+}
+
+
+  

@@ -43,14 +43,28 @@ $(document).ready(function() {
         carousel.reload(newOptions);
         return false;
     });
+
+    $('.card_price').hover(
+        
+        function() {
+            console.log('111');
+            $('.price_box').toggleClass('.gradient_background')
+        }
+    );
 });
 
 (function($) {
     $(function() {
+        
         $(".menu__icon").on("click", function() {
+            
             $(this)
                 .closest(".menu")
                 .toggleClass("menu_state_open");
         });
     });
 })(jQuery);
+
+
+
+
