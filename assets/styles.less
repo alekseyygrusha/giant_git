@@ -476,7 +476,7 @@ header {
             margin: 0 auto;
             .item {
                 // max-width: 360px;
-                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+                // box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
                 margin: 0px 10px;
                 p,
                 div {
@@ -503,7 +503,7 @@ header {
         }
 
         .slider>div:nth-child(odd) {
-            background-color: #f7fafc;
+            // background-color: #f7fafc;
             box-shadow: none;
         }
 
@@ -572,8 +572,9 @@ header {
             }
         }
 
-        .card:hover .icon {
+        .card:hover {
             color: linear-gradient(to right, #fd712c 0%, #f21780 100%);
+            cursor: pointer;
         }
     }
 }
@@ -609,7 +610,6 @@ footer {
 }
 .slick-arrow {
     font-size: 10px;
-   
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -644,6 +644,12 @@ footer {
     color: #777777;
     border: 1px solid #eeeeee;
 }
+
+.slick-track>div:nth-child(even)  {
+    background-color: #f7fafc;
+    box-shadow: none;
+}
+
 
 
   

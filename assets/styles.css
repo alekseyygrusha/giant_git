@@ -365,7 +365,6 @@ header .content .button_wrap .button:hover {
   margin: 0 auto;
 }
 .customers .slider_wrap .slider .item {
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   margin: 0px 10px;
 }
 .customers .slider_wrap .slider .item p,
@@ -387,7 +386,6 @@ header .content .button_wrap .button:hover {
   margin: 20px auto 0 20px;
 }
 .customers .slider_wrap .slider > div:nth-child(odd) {
-  background-color: #f7fafc;
   box-shadow: none;
 }
 .customers .slider_wrap .button_arrow {
@@ -443,8 +441,9 @@ header .content .button_wrap .button:hover {
   justify-content: center;
   align-items: center;
 }
-.giant_app_now .download_cards .card:hover .icon {
+.giant_app_now .download_cards .card:hover {
   color: linear-gradient(to right, #fd712c 0%, #f21780 100%);
+  cursor: pointer;
 }
 footer {
   background-color: #222222;
@@ -499,4 +498,8 @@ footer p {
   background-color: white;
   color: #777777;
   border: 1px solid #eeeeee;
+}
+.slick-track > div:nth-child(even) {
+  background-color: #f7fafc;
+  box-shadow: none;
 }
